@@ -5,10 +5,10 @@ function escapeRegExp(str) {
 }
 
 export default {
-  format(x) {
+  format: function (x) {
     return x;
   },
-  filterPredicate(rowval, filter) {
+  filterPredicate: function (rowval, filter) {
     // take care of nulls
     if (typeof rowval === 'undefined' || rowval === null) {
       return false;
@@ -24,7 +24,7 @@ export default {
     return (rowValue.search(searchTerm) > -1);
   },
 
-  compare(x, y) {
+  compare: function (x, y) {
     function cook(d) {
       if (typeof d === 'undefined' || d === null) return '';
       return d.toLowerCase();

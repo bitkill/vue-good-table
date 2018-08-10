@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xaksis/vue-good-table"
+    "url": "git+https://github.com/bitkill/vue-good-table"
   },
   "keywords": [
     "vue",

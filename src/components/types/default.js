@@ -1,6 +1,8 @@
 import diacriticless from 'diacriticless';
 
-const escapeRegExp = str => str.replace(/[\\^$*+?.()|[\]{}]/g, '\\$&');
+function escapeRegExp(str) {
+  return str.replace(/[\\^$*+?.()|[\]{}]/g, '\\$&')
+}
 
 export default {
   format(x) {

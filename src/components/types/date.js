@@ -9,7 +9,7 @@ date.isRight = true;
 date.compare = function (x, y, column) {
   function cook(d) {
     if (column && column.dateInputFormat) {
-      return parse(`${d}`, `${column.dateInputFormat}`, new Date());
+      return parse(String(d), String(column.dateInputFormat), new Date());
     }
     return d;
   }
